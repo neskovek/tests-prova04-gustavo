@@ -12,13 +12,11 @@ export const options = {
   thresholds: {
     http_req_failed: ['rate<0.25'],
     get_product_duration: ['p(90)<6800'],
-    status_ok_rate: ['rate>0.75']
+    content_OK: ['rate>0.75']
   },
-
   stages: [
-    { duration: '30s', target: 7 },
-    { duration: '2m', target: 92 },
-    { duration: '1m', target: 92 }
+    { duration: '1s', target: 7 },
+    { duration: '3m29s', target: 92 }
   ]
 };
 
